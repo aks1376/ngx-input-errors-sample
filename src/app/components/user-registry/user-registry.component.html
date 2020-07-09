@@ -1,0 +1,50 @@
+<section>
+  <header>
+    <mat-toolbar color="primary">
+      <span>User Registry</span>
+    </mat-toolbar>
+  </header>
+  <div class="form-wrapper">
+    <form [formGroup]="form" class="registry-form">
+
+      <mat-form-field class="w-100" style="text-align: right;" dir="rtl">
+        <mat-label>نام</mat-label>
+        <input matInput type="text" formControlName="name" placeholder="نام">
+        <mat-error ngxInputErrors [form]="form" controlName="name" displayName="نام" language="fa"></mat-error>
+      </mat-form-field>
+
+      <mat-form-field class="w-100" style="text-align: right;" dir="rtl">
+        <mat-label>نام خانوادگی</mat-label>
+        <input matInput type="text" formControlName="family" placeholder="نام خانوادگی">
+        <mat-error ngxInputErrors [form]="form" controlName="family" displayName="نام خانوادگی" language="fa">
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field class="w-100">
+        <mat-label>Age</mat-label>
+        <input matInput type="number" formControlName="age" placeholder="Age">
+        <mat-error ngxInputErrors [form]="form" controlName="age" displayName="age"></mat-error>
+      </mat-form-field>
+
+      <mat-form-field class="w-100">
+        <mat-label>Email</mat-label>
+        <input matInput type="email" formControlName="email" placeholder="Email">
+        <mat-error ngxInputErrors [form]="form" controlName="email" displayName="email"></mat-error>
+      </mat-form-field>
+
+      <mat-form-field class="w-100">
+        <mat-label>Address</mat-label>
+        <input matInput type="text" formControlName="address" placeholder="Address">
+        <mat-error ngxInputErrors [form]="form" controlName="address" displayName="address"></mat-error>
+      </mat-form-field>
+
+      <mat-form-field class="w-100">
+        <mat-label>Phone</mat-label>
+        <input matInput type="tel" formControlName="phone" placeholder="Phone">
+        <mat-error ngxInputErrors [form]="form" controlName="phone" displayName="phone"></mat-error>
+      </mat-form-field>
+
+      <button mat-raised-button type="submit" color="primary">REGISTER</button>
+    </form>
+  </div>
+</section>
