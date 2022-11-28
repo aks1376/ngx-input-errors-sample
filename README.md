@@ -8,6 +8,10 @@ the ngxInputErrors library is developed for describe and initialize the Validati
 
 for more information about ngxInputErrors library visit [ngxInputErrors](https://www.npmjs.com/package/ngx-input-errors) in npmjs website
 
+## Demo
+
+[Demo](https://aks1376.github.io/ngx-input-errors-sample/)
+
 ## Installation
 
 install `ngx-input-errors` from `npm`: 
